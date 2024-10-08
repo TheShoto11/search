@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Recipe</title>
+    <script src="https://kit.fontawesome.com/eed3b820c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Search recipe</h1>
+            <div class="field">
+                <div class="control">
+                    <input class="input" type="text" id="searchQuery" placeholder="Enter ingredients...">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary" onclick="search()">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <div class="dropdown">
+                        <button class="button is-secondary">Make a request <i class="fa-solid fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="request.html">Add a recipe</a>
+                            <a href="remove.html">Remove a recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="results"></div>
+        </div>
+    </section>
+
+    <script>
+        async function search() {
+            const query = document.getElementById('searchQuery').value;
+            const includeQuery = document.getElementById('searchQuery').value;
+            const excludeQuery = document.getElementById('searchQuery').value;
+
+            const response = await fetch(`http://localhost:9200/recipes/_search/?q=${query}`);
+            const reader = await response.body.getReader();
+            const { value, done } = await reader.read();
+            const text = new TextDecoder().decode(value);
+            const map = JSON.parse(text);
+
+            const usedNames = []; // array to keep track of used names
+
+             let text2 = '';
+
+                    const delay = (delayInms) => {
+                return new Promise(resolve => setTimeout(resolve, delayInms));
+            };
+
+displayResults('start');
+         await delay(500);
+
+         try {for (let i = 0; i < map['hits']['total']['value']; i++) { // Corrected i <= to i < 
+
+    displayResults(`${i} ${text2}`);
+         await delay(500);
+    const name = map['hits']['hits'][`${i}`]['_source']['name'];
+
+    // Check if the name is already processed
+    if (usedNames.includes(name)) {
+        continue; // Skip to the next iteration
+    }
+
+    usedNames.push(name); // Add the name to the array
+
+     text2 += `<h1>${name}</h1>`;
+     const image = map['hits']['hits'][`${i}`]['_source']['image'];
+     text2 += `<img src="${image}" alt="Recipe Image">`;
+    const ingredients = Array.from(map['hits']['hits'][`${i}`]['_source']['ingredients']);
+
+    text2 += '<h1>Ingredients</h1>';
+    text2 += ingredients.map((el) => {
+        return el + '<br>';
+    }).join('');
+
+    const instructions = Array.from(map['hits']['hits'][`${i}`]['_source']['instructions']);
+
+    text2 += '<h1>Instructions</h1>';
+    text2 += instructions.map((el) => {
+        return el + '<br>';
+    }).join('');
+
+    
+    text2 += '<hr>';
+    // displayResults('bbb: ' + text2);
+}        
+            
+         } catch (error) {
+            displayResults(error);
+         }
+    
+// displayResults('aaa: sss');
+
+}
+
+        function displayResults(results) {                            
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = results ;
+        }
+
+       
+    </script>
+</body>
+
+</html>

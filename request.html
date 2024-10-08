@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Addition of Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Request Addition of Recipe</h1>
+            <form id="recipeForm" onsubmit="submitRecipe(event)">
+                <div class="field">
+                    <label class="label">Recipe Name</label>
+                    <div class="control">
+                        <input class="input" type="text" id="recipeName" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Ingredients</label>
+                    <div class="control">
+                        <textarea class="input" id="ingredients" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Instructions</label>
+                    <div class="control">
+                        <textarea class="input" id="instructions" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" id="email" required>
+                    </div>
+                    </a>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Send Request</button>
+                        <a href="index.html" class="button is-secondary">Go Back</a>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        async function submitRecipe(event) {
+            event.preventDefault();
+
+           // Fetch form values
+           const recipeName = document.getElementById('recipeName').value;
+            const ingredients = document.getElementById('ingredients').value;
+            const instructions = document.getElementById('instructions').value;
+            const email = document.getElementById('email').value;
+
+            // Construct email body
+            const emailBody = `
+                Recipe Name: ${recipeName}\n
+                Ingredients:\n${ingredients}\n
+                Instructions:\n${instructions}\n
+                Email: ${email}`;
+                
+            // Send email request to server
+            try {
+                const response = await fetch('/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ recipeName, ingredients, instructions, email })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send request');
+                }
+
+                alert('Recipe request sent!');
+                document.getElementById('recipeForm').reset();
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to send request. Please try again.');
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+[
+  {
+      "name": "Spaghetti Carbonara",
+      "ingredients": [
+            "spaghetti 200g" ,
+           "pancetta 100g" ,
+            "eggs 2 large" ,
+           "pecorino cheese 50g" ,
+            "parmesan 50g" ,
+           "garlic 2 cloves" ,
+            "salt to taste" ,
+            "black pepper to taste" 
+      ],
+      "instructions": [
+          "Cook the spaghetti in salted boiling water until al dente.",
+          "In a large pan, cook the pancetta with the garlic until crispy. Remove garlic afterward.",
+          "Beat the eggs in a bowl, then add pecorino and parmesan. Mix well.",
+          "Drain the pasta and add to the pancetta. Remove from heat.",
+          "Quickly add the egg and cheese mixture, stirring vigorously to create a creamy sauce.",
+          "Season with salt and black pepper. Serve immediately."
+      ],
+        "image": "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1558_1_1436795948.jpg"
+  },
+  {
+      "name": "Chicken Curry",
+      "ingredients": [
+        "1kg chicken thighs, chopped",
+        "2 onions, finely chopped",
+        "3 garlic cloves, minced",
+        "1 tbsp ginger, minced",
+        "2 tbsp curry powder",
+        "1 tsp turmeric",
+        "400g can chopped tomatoes",
+        "400ml coconut milk",
+        "Salt, to taste",
+        "Black pepper, to taste",
+        "Cilantro, for garnish"
+    ],
+      "instructions": [
+          "Heat oil in a large pot and sauté onions until golden.",
+          "Add garlic and ginger, cooking for another minute.",
+          "Stir in the curry powder and turmeric, cooking for another minute.",
+          "Add chicken pieces and cook until browned on all sides.",
+          "Pour in the chopped tomatoes and coconut milk. Stir well.",
+          "Simmer for 30-40 minutes until the chicken is cooked through.",
+          "Season with salt and pepper. Garnish with cilantro before serving."
+      ],
+      "image": "https://www.foodandwine.com/thmb/8YAIANQTZnGpVWj2XgY0dYH1V4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spicy-chicken-curry-FT-RECIPE0321-58f84fdf7b484e7f86894203eb7834e7.jpg"
+    },
+  {
+      "name": "Vegetable Stir-fry",
+      "ingredients": [
+        "1 bell pepper, sliced",
+        "1 carrot, julienned",
+        "100g broccoli florets",
+        "100g snap peas",
+        "1 onion, sliced",
+        "2 garlic cloves, minced",
+        "2 tbsp soy sauce",
+        "1 tbsp oyster sauce",
+        "1 tsp sesame oil",
+        "Salt, to taste",
+        "Black pepper, to taste"
+    ],
+      "instructions": [
+          "Heat oil in a wok or large pan over high heat.",
+          "Add garlic and onion, sautéing until fragrant.",
+          "Add the rest of the vegetables and stir-fry for 5-7 minutes.",
+          "Stir in the soy sauce, oyster sauce, and sesame oil.",
+          "Season with salt and pepper to taste.",
+          "Serve immediately with rice or noodles."
+      ],
+      "image": "https://playswellwithbutter.com/wp-content/uploads/2022/02/Beef-and-Vegetable-Stir-Fry-16.jpg"
+    },
+  {
+      "name": "Beef Tacos",
+      "ingredients": [
+        "500g ground beef",
+        "1 onion, diced",
+        "2 garlic cloves, minced",
+        "1 tsp ground cumin",
+        "1 tsp chili powder",
+        "8 taco shells",
+        "Shredded lettuce",
+        "Diced tomato",
+        "Grated cheese",
+        "Sour cream, to taste"
+    ],
+      "instructions": [
+          "Cook the ground beef in a pan over medium heat until browned.",
+          "Add the onion and garlic, cooking until softened.",
+          "Stir in the cumin and chili powder. Cook for another minute.",
+          "Warm the taco shells according to package instructions.",
+          "Fill the taco shells with the beef mixture, lettuce, tomato, and cheese.",
+          "Top with sour cream and serve immediately."
+      ],
+      "image": "https://kaynutrition.com/wp-content/uploads/2023/08/shredded-beef-tacos.jpg"
+    },
+  {
+      "name": "Pancakes",
+      "ingredients": [
+        "200g all-purpose flour",
+        "2 tbsp sugar",
+        "2 tsp baking powder",
+        "1/2 tsp salt",
+        "1 egg",
+        "300ml milk",
+        "2 tbsp butter, melted",
+        "Butter or oil, for cooking"
+    ],
+      "instructions": [
+          "In a bowl, mix flour, sugar, baking powder, and salt.",
+          "In another bowl, beat the egg and add the milk and melted butter.",
+          "Combine the wet and dry ingredients, stirring until just combined.",
+          "Heat a non-stick pan and add a small amount of butter or oil.",
+          "Pour batter onto the pan and cook until bubbles form on the surface.",
+          "Flip and cook until golden brown on both sides.",
+          "Serve with your favorite toppings."
+      ],
+      "image": "https://www.allrecipes.com/thmb/xZIFcG-Cy02RTFY-zXFbAxhasjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20334-Banana-Pancakes-mfs_02_1x2-8635f9feb00e4d20998e10c039e2c8ca.jpg"
+    },
+  {
+      "name": "Caesar Salad",
+      "ingredients": [
+        "1 romaine lettuce",
+        "50g parmesan cheese, shaved",
+        "1 cup croutons",
+        "1/2 cup Caesar dressing",
+        "1 grilled chicken breast, sliced (optional)"
+    ],
+      "instructions": [
+          "Chop the romaine lettuce and place in a large bowl.",
+          "Add the shaved parmesan and croutons.",
+          "Toss with Caesar dressing until evenly coated.",
+          "Top with sliced grilled chicken if desired.",
+          "Serve immediately."
+      ],
+      "image": "https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg"
+    },
+  {
+      "name": "Tomato Basil Soup",
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 garlic cloves, minced",
+        "800g canned tomatoes",
+        "500ml chicken or vegetable broth",
+        "1/4 cup fresh basil, chopped",
+        "Salt, to taste",
+        "Black pepper, to taste"
+    ],
+      "instructions": [
+          "Heat olive oil in a pot over medium heat.",
+          "Add onion and garlic, cooking until softened.",
+          "Add the canned tomatoes and broth. Bring to a boil.",
+          "Reduce heat and simmer for 20 minutes.",
+          "Stir in the fresh basil and season with salt and pepper.",
+          "Blend the soup until smooth.",
+          "Serve hot."
+      ],
+      "image": "https://www.ambitiouskitchen.com/wp-content/uploads/2018/08/tomatosoup-4-2-725x725.jpg"
+    },
+  {
+      "name": "Chocolate Chip Cookies",
+      "ingredients": [
+        "250g all-purpose flour",
+        "1/2 tsp baking soda",
+        "170g unsalted butter, melted",
+        "200g brown sugar",
+        "100g white sugar",
+        "1 tbsp vanilla extract",
+        "1 egg",
+        "1 egg yolk",
+        "300g chocolate chips"
+    ],
+        "instructions": [
+            "Preheat the oven to 170°C (350°F).",
+            "Sift together the flour and baking soda; set aside.",
+            "In a medium bowl, cream together the melted butter, brown sugar, and white sugar.",
+            "Beat in the vanilla, egg, and egg yolk until light and creamy.",
+            "Mix in the sifted ingredients until just blended.",
+            "Stir in the chocolate chips by hand using a wooden spoon.",
+            "Drop cookie dough 1/4 cup at a time onto the prepared cookie sheets.",
+            "Bake for 15 to 17 minutes, or until the edges are lightly toasted.",
+            "Cool on baking sheets for a few minutes before transferring to wire racks to cool completely."
+        ],
+        "image": "https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg"
+    },
+    {
+        "name": "Guacamole",
+        "ingredients": [
+            "3 avocados, peeled and pitted",
+            "1 lime, juiced",
+            "1 tsp salt",
+            "1/2 cup onion, diced",
+            "3 tbsp fresh cilantro, chopped",
+            "2 roma tomatoes, diced",
+            "1 tsp garlic, minced",
+            "1 pinch ground cayenne pepper (optional)"
+        ],
+        "instructions": [
+            "In a medium bowl, mash together the avocados, lime juice, and salt.",
+            "Mix in the onion, cilantro, tomatoes, and garlic.",
+            "Stir in cayenne pepper if desired.",
+            "Refrigerate 1 hour for best flavor, or serve immediately."
+        ],
+        "image": "https://img.taste.com.au/zKnxMsdp/taste/2024/03/guacamole-recipe-close-up-196669-1.jpg"
+    },
+    {
+        "name": "French Toast",
+        "image_url":" carbonara-horizontal-square640-v2.jpg ",
+        "ingredients": [
+            "4 bread slices",
+            "2 eggs",
+            "1/2 cup milk",
+            "1 tsp vanilla extract",
+            "1/2 tsp ground cinnamon",
+            "Butter or oil, for cooking",
+            "Maple syrup, for serving",
+            "Powdered sugar, for serving"
+        ],
+        "instructions": [
+            "In a shallow bowl, whisk together the eggs, milk, vanilla, and cinnamon.",
+            "Heat a skillet over medium heat and add butter or oil.",
+            "Dip each slice of bread in the egg mixture, soaking both sides.",
+            "Cook the bread slices in the skillet until golden brown on both sides.",
+            "Serve hot with maple syrup and powdered sugar."
+        ],
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0sjITsywQpMouf4GRxwyCpns8O2VO0JEfg&s"
+    }
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Removal of a Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Request Removal of a Recipe</h1>
+            <form id="recipeForm1" onsubmit="submitRequest(event)">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" id="name1" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Reason for Removal</label>
+                    <div class="control">
+                        <textarea class="input" id="reason1" rows="3" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" id="email1" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Send Request</button>
+                        <a href="index.html" class="button is-secondary">Go Back</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        async function submitRequest(event) {
+            event.preventDefault();
+
+            // Fetch form values
+            const name1 = document.getElementById('name1').value;
+            const reason1 = document.getElementById('reason1').value;
+            const email1 = document.getElementById('email1').value;
+
+            // Construct email body
+            const emailBody1 = `
+                Name: ${name1}\n
+                Reason for Request:\n${reason1}\n
+                Email: ${email1}`;
+                
+            // Send email request to server
+            try {
+                const response = await fetch('/send-email1', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name1, reason1, email1 })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send request');
+                }
+
+                alert('Request sent!');
+                document.getElementById('recipeForm1').reset();
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to send removal request. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
